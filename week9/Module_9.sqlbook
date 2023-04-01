@@ -1,0 +1,106 @@
+-- SQLBook: Code
+/*
+Below is a list of employee names and hire dates. These employees must be deleted from the employees database. Use the list to look up their employee numbers 
+and write delete statements that will delete the employees information from the titles, salaries, dept_emp, and employees tables.
+
+Name: Bader Swan Hire Date: 9-21-1988
+Name: Elvia Homond Hire Date: 9-10-1989
+Name: Irena Roccetti Hire Date: 4-11-1996
+Name: Aral Erman Hire Date: 5-18-1996
+Name: Mohammad Koshino Hire Date: 6-4-1993
+
+You should have 4 delete statements for each name in the list for a total or 20 delete statements.
+*/
+
+
+#Name: Bader Swan Hire Date: 9-21-1988
+
+SELECT * FROM employees
+WHERE (last_name = 'Swan' AND first_name = 'Bader')
+AND hire_date = '1988-09-21';
+
+DELETE * FROM employees
+WHERE emp_no = '10034';
+
+DELETE * FROM titles
+WHERE emp_no = '10034';
+
+DELETE * FROM salaries
+WHERE emp_no = '10034';
+
+DELETE * FROM dept_emp
+WHERE emp_no = '10034';
+
+# Name: Elvia Homond Hire Date: 9-10-1989
+
+SELECT * FROM employees
+WHERE (last_name = 'Homond' AND first_name = 'Elvia')
+AND hire_date = '1989-09-10';
+
+DELETE * FROM employees
+WHERE emp_no = '10489';
+
+DELETE * FROM titles
+WHERE emp_no = '10489';
+
+DELETE * FROM salaries
+WHERE emp_no = '10489';
+
+DELETE * FROM dept_emp
+WHERE emp_no = '10489';
+
+#Name: Irena Roccetti Hire Date: 4-11-1996
+
+SELECT * FROM employees
+WHERE (last_name = 'Roccetti' AND first_name = 'Irena')
+AND hire_date = '1996-04-11';
+
+DELETE * FROM employees
+WHERE emp_no = '10610';
+
+DELETE * FROM titles
+WHERE emp_no = '10610';
+
+DELETE * FROM salaries
+WHERE emp_no = '10610';
+
+DELETE * FROM dept_emp
+WHERE emp_no = '10610';
+
+#Name: Aral Erman Hire Date: 5-18-1996
+
+SELECT * FROM employees
+WHERE (last_name = 'Erman' AND first_name = 'Aral')
+AND hire_date = '1996-05-18';
+
+DELETE * FROM employees
+WHERE emp_no = '10708';
+
+DELETE * FROM titles
+WHERE emp_no = '10708';
+
+DELETE * FROM salaries
+WHERE emp_no = '10708';
+
+DELETE * FROM dept_emp
+WHERE emp_no = '10708';
+
+#Name: Mohammad Koshino Hire Date: 6-4-1993
+
+SELECT * FROM employees
+WHERE (last_name = 'Koshino' AND first_name = 'Mohammad')
+AND hire_date = '1993-06-04';
+
+DELETE * FROM employees
+WHERE emp_no = '10840';
+
+DELETE * FROM titles
+WHERE emp_no = '10840';
+
+DELETE * FROM salaries
+WHERE emp_no = '10840';
+
+DELETE * FROM dept_emp
+WHERE emp_no = '10840';
+
+

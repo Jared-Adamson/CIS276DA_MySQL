@@ -1,0 +1,19 @@
+first_name,last_name,title,dept_name,from_date,to_date
+Vishwani,Minakawa,Manager,Marketing,1991-10-01,9999-01-01
+Vishwani,Minakawa,"Senior Staff",Marketing,1991-10-01,9999-01-01
+Isamu,Legleitner,Manager,Finance,1989-12-17,9999-01-01
+Isamu,Legleitner,"Senior Staff",Finance,1989-12-17,9999-01-01
+Karsten,Sigstam,Manager,"Human Resources",1992-03-21,9999-01-01
+Karsten,Sigstam,"Senior Staff","Human Resources",1992-03-21,9999-01-01
+Oscar,Ghazalie,Manager,Production,1996-08-30,9999-01-01
+Oscar,Ghazalie,"Senior Engineer",Production,1996-08-30,9999-01-01
+Leon,DasSarma,Manager,Development,1992-04-25,9999-01-01
+Leon,DasSarma,"Technique Leader",Development,1992-04-25,9999-01-01
+Dung,Pesch,Manager,"Quality Management",1994-06-28,9999-01-01
+Dung,Pesch,"Technique Leader","Quality Management",1994-06-28,9999-01-01
+Hauke,Zhang,Manager,Sales,1991-03-07,9999-01-01
+Hauke,Zhang,Staff,Sales,1991-03-07,9999-01-01
+Hilary,Kambil,Manager,Research,1991-04-08,9999-01-01
+Hilary,Kambil,"Senior Staff",Research,1991-04-08,9999-01-01
+Yuchang,Weedman,Manager,"Customer Service",1996-01-03,9999-01-01
+Yuchang,Weedman,"Senior Staff","Customer Service",1996-01-03,9999-01-01
