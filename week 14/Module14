@@ -1,0 +1,38 @@
+/*
+Jared Adamson
+
+Create a query that returns "FirstName LastName - TItle" as a single field value for 20 employees. For example, mine would be "Chad Galligan - CIO"
+
+Create a query that returns 2 fields. The first should have the first letter of first name, a period, and their last name and have an alias of "Name_Abbr".
+ Mine would be C. Galligan. The second field should be a calculation of the age they were when they started and have an alias of "Starting_Age". Mine would
+  be 21. HINT: You can calculate the age they were when they started using their birthdate, their hire date, and a function.
+
+Write a query using a group by statement that displays each Department number and the current number of employees for each department. HINT: Remember 
+that the dept_emp table has department membership and to_date of '9999-01-01' means they are currently in the department.
+
+Add to the query you wrote in #3 and add a having clause to only display departments with less than 15000 members.
+*/
+
+
+
+SELECT CONCAT(first_name, ' ', last_name, ' - ', title) AS Name_Title 
+FROM titles
+JOIN employees ON titles.emp_no = employees.emp_no
+LIMIT 20;
+
+
+SELECT CONCAT(LEFT(first_name, 1), '.', last_name) AS Name_Abbr, DATEDIFF(hire_date, birth_date) DIV 365 AS Starting_Age
+FROM employees;
+
+
+SELECT dept_no, COUNT(emp_no) as 'Employee_Count'
+FROM dept_emp
+WHERE to_date = '9999-01-01'
+GROUP BY dept_no;
+
+
+SELECT dept_no, COUNT(emp_no) as 'Employee_Count'
+FROM dept_emp
+WHERE to_date = '9999-01-01'
+GROUP BY dept_no
+HAVING Employee_Count < 1500;
